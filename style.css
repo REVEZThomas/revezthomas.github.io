@@ -1,0 +1,204 @@
+/* ### LAYOUT ### */
+
+.sidenav {
+    display: flex;
+    flex-flow: column; 
+    align-items: center;
+
+    height: 100%;
+    width: 30%;
+    overflow-x: hidden;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    box-sizing: border-box;
+    border-right: 10px solid #43B7FF;
+}
+
+.sidenav p,a,h6 {
+    display: block;
+}
+
+.contenu a {
+    display: inline-block;
+}
+
+.sidenav a {
+    padding: 0.5em 0em;
+}
+
+.contenu {
+    margin-left: 30%; /* Same as the width of the sidenav */
+    padding:50px;
+}
+
+.colnowrap {
+    display: flex; 
+    flex-flow: column nowrap; 
+    align-items: space-around;
+}
+
+.colwrap {
+    display: flex; 
+    flex-flow: column wrap; 
+    align-items: space-around;
+}
+
+.rownowrap {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.rowwrap {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.verticalcent {
+    align-self: center;
+}
+
+.carte {
+    padding: 2em;
+    margin: 20px;
+    text-align: left;
+
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px grey; 
+}
+
+.logotexte {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0em 0,5em;
+}
+
+.wrapper {
+    display:flex;
+    flex-flow: column nowrap;
+    align-items: space-around;
+    margin: 50px;
+}
+
+.shadowbox {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: space-around;
+    text-align: left;
+    
+    padding: 50px;
+    margin: 0 50px;
+
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px grey; 
+}
+
+/* ### Polices, Couleurs ### */
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {   
+    background-color: #111;
+}
+
+.sidenav p {
+    color: #43B7FF;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.sidenav a {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #43B7FF;
+}
+
+.contenu {
+    background-color: white;
+}
+
+h1 {
+    box-sizing: border-box; 
+    box-shadow: 10px 10px 5px grey;  
+    background-color: black;
+    color:white;
+}
+
+h1,h2,h3 {
+    text-align: center;
+    padding: 0;
+}
+
+.date {
+    font-weight: bold;
+}
+
+/* ### Images ### */
+
+#logo {
+    max-width: 125px;
+}
+
+#logodesign {
+    max-width: 100px;
+}
+
+#linkedin {
+    max-width: 50px;
+}
+
+#office {
+    width: 50px;
+}
+
+#specialist {
+    width: 150px;
+}
+
+#flag {
+    border: 2px solid black;
+    max-width: 125px; 
+    height: auto;
+    border-radius: 2px;
+}
+
+/* ### Boutons ### */
+
+.btn {
+    font-size: 25px;
+    background-color: black;
+    border: none;
+    color:white;
+    padding: 20px 40px;
+}
+
+.btn:hover {
+    background-color: darkgrey;
+}
+
+/*
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+*/
